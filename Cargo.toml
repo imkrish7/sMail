@@ -1,0 +1,26 @@
+[package]
+name = "sMail"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[lib]
+crate-type = ["cdylib", "lib"]
+name = "s_mail"
+
+
+[features]
+no-entrypoint = []
+no-idl = []
+no-log-ix-name = []
+cpi = ["no-entrypoint"]
+default = []
+
+
+[dependencies]
+anchor-lang = "0.18.2"
+solana-program = "1.9.6"
+borsh = "0.9.3"
+borsh-derive = "0.9.3"
+thiserror = "1.0.30"
